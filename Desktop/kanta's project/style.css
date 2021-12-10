@@ -172,6 +172,22 @@ span.burger3{
     padding-top:20px;
 }
 
+.mission1 h2,
+.mission1 p,
+.mission2 h2,
+.mission2 p,
+.mission3 h2,
+.mission3 p{
+    text-align: center;
+    color:#fa8072;
+}
+
+.mission1 h2,
+.mission2 h2,
+.mission3 h2{
+    margin:20px 0px;
+}
+
 .mission-icon1,
 .mission-icon2,
 .mission-icon3{
