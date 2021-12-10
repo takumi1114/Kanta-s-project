@@ -210,12 +210,14 @@ footer .footer_up {
     align-items: center;
     justify-content: center;
     height: 64px;
+    background-color: #778899;
 }
 
 footer .footer_up a {
     text-decoration: none;
     color: #fa8072;
     margin: 0 20px;
+    color:#ffffff;
 }
 
 footer .footer_bottom {
