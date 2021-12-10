@@ -199,3 +199,28 @@ span.burger3{
     width:fit-content;
 }
 
+footer {
+    height: 88px;
+    width: 100%;
+    text-align: center;
+}
+
+footer .footer_up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+}
+
+footer .footer_up a {
+    text-decoration: none;
+    color: #fa8072;
+    margin: 0 20px;
+}
+
+footer .footer_bottom {
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff
+}
+
