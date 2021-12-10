@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body,html{
+    height:100%;
+}
+
+.body-wrapper{
+    background-color: #fa8072;
+    height:100%;
+}
+
+.header-wrapper{
+    position: fixed;
+    background-color: transparent;
+    z-index: 2;
+    width:100%;
+    
+}
+
+.header{
+    display: flex;
+    height:80px;
+    width:90%;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-wrapper{
+    width:fit-content;
+}
+
+.logo{
+    width:150px;
+}
+
+.logo span{
+    color:#ffffff;
+    font-size:40px;
+}
+
+.burger-menu-wrapper{
+    width:fit-content;
+}
+.burger-menu{
+    width:40px;
+    height:40px;
+    border: 2px solid #ffffff;
+    border-radius:50%;
+    background-color: rgba(128, 128, 128, 0.8);
+    position: relative;
+}
+
+span.burger1,
+span.burger2,
+span.burger3{
+    height:2px;
+    width:25px;
+    background-color:#ffffff;
+    position: absolute;
+}
+
+span.burger1{
+    left:7px;
+    top:11px;
+}
+
+span.burger2{
+    left:7px;
+    top:19px;
+}
+
+span.burger3{
+    left:7px;
+    top:27px;
+}
+
+.top-page{
+    width:80%;
+    margin:0 auto;
+    padding-top:100px;
+    display: flex;
+}
+
+.catch-copy{
+    margin-top:100px;
+    text-align: center;
+    width:fit-content;
+    width:50%;
+}
+
+.catch-copy h1,
+.catch-copy p{
+    color:#ffffff;
+}
+
+.catch-copy p{
+    padding-bottom:15px;
+}
+
+.view-details-btn{
+    border: 1px solid #ffffff;
+    padding:10px 20px;
+    width:fit-content;
+    margin:0 auto;
+
+}
+
+.view-details-btn a{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.top-images{
+    width:50%;
+    height:500px;
+    position: relative;
+}
+
+.top-image1,
+.top-image2,
+.top-image3{
+    overflow: hidden;
+
+}
+
+.top-image1 img{
+    width:320px;
+    height:320px;
+    border-radius: 50%;
+    position: absolute;
+    left:220px;
+}
+
+.top-image2 img{
+    width:250px;
+    height:250px; 
+    border-radius: 50%;
+    position: absolute;
+    left:0px;
+    top:180px;
+}
+
+.company-mission-wrapper{
+    background-color: #fa8072;
+}
+
+.company-mission{
+    width:70%;
+    margin:0 auto;
+    display: flex;
+    height:800px;
+}
+
+.company-mission img{
+    width:100px;
+    height:100px;
+}
+
+.mission1,
+.mission2,
+.mission3{
+    width:380px;
+    height:430px;
+    background-color:#f5f5f5;
+    margin-right:50px;
+    box-shadow: -10px 10px #cc675c;
+    padding-top:20px;
+}
+
+.mission-icon1,
+.mission-icon2,
+.mission-icon3{
+    text-align:center;
+    margin:0 auto;
+    border:3px solid #fa8072;
+    padding:20px;
+    border-radius: 50%;
+    width:fit-content;
+}
+
