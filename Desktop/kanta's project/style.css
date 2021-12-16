@@ -1,3 +1,5 @@
+/* 全ページ共通 */
+
 *{
     margin: 0px;
     padding:0px;
@@ -79,6 +81,37 @@ span.burger3{
     top:27px;
 }
 
+
+footer {
+    height: 88px;
+    width: 100%;
+    text-align: center;
+}
+
+footer .footer_up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    background-color: #994f46;
+}
+
+footer .footer_up a {
+    text-decoration: none;
+    margin: 0 20px;
+    color:#ffffff;
+}
+
+footer .footer_bottom {
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* トップページ */
+
+
 .top-page{
     width:80%;
     margin:0 auto;
@@ -155,6 +188,7 @@ span.burger3{
     display: flex;
     height:800px;
     padding-bottom:150px;
+    justify-content: space-between;
 }
 
 .company-mission img{
@@ -168,9 +202,13 @@ span.burger3{
     width:380px;
     height:430px;
     background-color:#f5f5f5;
-    margin-right:50px;
+    margin-right:30px;
     box-shadow: -10px 10px #cc675c;
     padding-top:20px;
+}
+
+.mission3{
+    margin-right:0px;
 }
 
 .mission1 h2,
@@ -214,14 +252,11 @@ span.burger3{
 .intro-contents{
     display: flex;
     position: relative;
-    height:500px;
+    height:400px;
     margin:0 auto;
     width:70%;
 }
 
-.intro-image1{
-
-}
 
 .intro-image1 img{
     width:300px;
@@ -277,31 +312,256 @@ padding-bottom:15px;
     text-decoration: none;
 }
 
-
-
-footer {
-    height: 88px;
-    width: 100%;
-    text-align: center;
+/* .inquiry-form-wrapper{
+    width:100%;
+    background-color:#fa8072;
+    height:300px;
+    padding-bottom: 300px;
 }
 
-footer .footer_up {
+.inquiry-form-block{
+    width:40%;
+    height:400px;
+    background-color:#f5f5f5;
+    margin:0 auto;
+    box-shadow: -10px 10px #cc675c;
+}
+
+.inquiry-form-block h2{
+    color:#fa8072;
+    padding:30px 0 40px 0;
+}
+
+.contact-forms{
+    width:50%;
+    margin:0 auto;
+    text-align:center;
+}
+
+.name-form{
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 64px;
-    background-color: #994f46;
+    margin-bottom:10px;
 }
 
-footer .footer_up a {
+input.last-name{
+    margin-right:10px;
+}
+
+.email-form{
+    margin-bottom:20px;
+}
+
+.email-form input,
+.name-form input{
+    width:100%;
+    border:1px solid #fa8072;
+}
+
+.inquiry-form textarea{
+    width:100%;
+    height:150px;
+    margin-bottom:10px;
+    border:1px solid #fa8072;
+}
+
+.submit-btn{
+    width:150px;
+    margin:0 auto;
+}
+
+.submit-btn input{
+    padding:10px 40px;
+    background-color:#fa8072;
+    color:#ffffff;
+    border:none;
+    cursor: pointer;
+} */
+
+.business-list-wrappper{
+    width:100%;
+    height:800px;
+    background-color:#cc675c;
+    z-index: -3;
+}
+
+
+.business-list-wrappper h2{
+    color:#ffffff;
+    font-size:28px;
+    text-align: center;
+    padding:50px 0px;
+}
+
+.business-blocks{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    margin:0 auto;
+    z-index: -2;
+}
+
+.business-block1 h3,
+.business-block2 h3,
+.business-block3 h3{
+    color:#fa8072;
+    margin-bottom:25px;
+    font-size:25px;
+    font-weight:400;
+}
+
+.business-block1,
+.business-block2,
+.business-block3{
+    width:30%;
+    height:580px;
+    background-color: #f5f5f5;
+    padding:15px 10px;
+    text-align: center;
+    box-shadow: -10px 10px #994f46;
+}
+
+
+.business-block1 img,
+.business-block2 img,
+.business-block3 img{
+width:80%;
+height:250px;
+margin-bottom:20px;
+}
+
+.business-overview{
+    width:75%;
+    padding:10px;
+    margin:0 auto;
+    border: 2px solid #fa8072;
+    margin-bottom:50px;
+}
+
+.business-overview p{
+    color:#fa8072;
+}
+
+
+.business-block1 a,
+.business-block2 a,
+.business-block3 a{
+    color:#fa8072;
+    padding:15px 40px;
     text-decoration: none;
-    margin: 0 20px;
+    border:2px solid #fa8072;
+    position:relative;
+    overflow: hidden;
+    transition:all 1s;
+    width:50%;
+    display: block;
+    z-index: 1;
+    margin:0 auto;
+}
+
+.business-block1 a::before,
+.business-block2 a::before,
+.business-block3 a::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
+    background-color: #fa8072;
+    z-index:-1;
+    transform: translateX(-100%);
+    transition:all 0.5s;
+
+}
+
+.business-block1 a:hover:before,
+.business-block2 a:hover:before,
+.business-block3 a:hover:before{
+    transform:translateX(0);
+}
+
+.business-block1 a:hover,
+.business-block2 a:hover,
+.business-block3 a:hover{
     color:#ffffff;
 }
 
-footer .footer_bottom {
-    height: 24px;
-    background-color: #000000;
-    color: #ffffff
+.business-list-wrappper svg{
+    background-color: #fa8072;
+    margin-top:40px;
 }
 
+.sns-wrapper{
+    width:100%;
+    background-color: #fa8072;
+    padding-bottom: 150px;
+    padding-top:300px;
+}
+
+.sns-block{
+    width:40%;
+    height:400px;
+    margin:0 auto;
+    box-shadow: -10px 10px #cc675c;
+    background-color:#f5f5f5 ;
+}
+
+.sns-block h2{
+    color:#fa8072;
+    padding:30px 0 20px 0;
+    text-align: center;
+    font-size: 35px;
+}
+
+.sns-icons1,
+.sns-icons2{
+    display:flex;
+    margin:0 auto;
+    width:80%;
+    text-align: center;
+    justify-content: center;
+    padding-bottom:15px;
+}
+
+.sns-block img{
+    width:60%;
+}
+
+/* 事業紹介ページ*/
+
+.business-intro-wrapper{
+    height:1200px;
+    text-align:center;
+    background-color:#fa8072;
+    padding-top:130px;
+
+}
+
+.business-intro-block{
+    width:60%;
+    height:800px;
+    margin:0 auto;
+    box-shadow: 15px 15px #cc675c;
+    background-color:#f5f5f5;
+    padding:15px 20px;
+}
+.business-intro-wrapper h1{
+    color:#fa8072;
+    padding-bottom:30px;
+}
+
+.slide-area{
+    width:85%;
+    margin:0 auto;
+}
+
+.slide-show li{
+    list-style: none;
+}
+
+.slide-show img{
+    width:100%;
+    border-radius:10px;
+    
+}
