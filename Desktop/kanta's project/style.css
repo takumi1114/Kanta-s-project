@@ -31,6 +31,44 @@ body,html{
     align-items: center;
 }
 
+.header-menu-wrapper{
+    width:100%;
+    background-color: rgba(128, 128, 128, 0.7);
+    position: absolute;
+    z-index: 3;
+    height:100px;
+    top:-100px;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    width:40%;
+    margin:0 auto;
+    padding:15px 0;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 18px;
+}
+
+.menu-close-btn{
+    width:fit-content;
+    margin:0 auto;
+    color:#ffffff;
+    padding-top:5px;
+    border:2px solid #ffffff;
+    padding:0 10px;
+    font-size:13px;
+    cursor: pointer;
+}
+
+.menu-close-btn i{
+    padding-right:0.5em;
+}
+
 
 .logo-wrapper{
     width:fit-content;
@@ -55,6 +93,7 @@ body,html{
     border-radius:50%;
     background-color: rgba(128, 128, 128, 0.8);
     position: relative;
+    cursor: pointer;
 }
 
 span.burger1,

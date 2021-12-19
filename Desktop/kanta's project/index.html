@@ -8,10 +8,34 @@
     <title>会社名</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="responsive.css" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <!-- スライド部分 -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- JSファイル導入 -->
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8047788489.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <div class="header-menu-wrapper off">
+            <div class="header-menu">
+                <div class="menu-1 menu-items"><a href="#company-intro">弊社について</a></div>
+                <div class="menu-2 menu-items"><a href="#business-list">弊社が行っている事業</a></div>
+                <div class="menu-3 menu-items"><a href="#sns">ソーシャルメディア</a></div>
+            </div>
+            <div class="menu-close-btn">
+                <span><i class="far fa-window-close"></i>Close</span>
+            </div>
+        </div>
         <div class="header-wrapper">
             <div class="header">
                 <div class="logo-wrapper">
@@ -44,7 +68,7 @@
             </div>
         </div>
 
-        <div class="company-mission-wrapper">
+        <div class="company-mission-wrapper" id="missions">
             <div class="company-mission">
                 <div class="mission1">
                     <div class="mission-icon1">
@@ -88,7 +112,7 @@
             </div>
         </div>
 
-        <div class="company-intro-wrapper">
+        <div class="company-intro-wrapper" id="company-intro">
             <div class="intro-contents">
                 <div class="intro-image1">
                     <img src="image/desk.jpg">
@@ -97,7 +121,7 @@
                     <img src="image/desk2.jpg">
                 </div>
                 <div class="intro-block">
-                    <h2>当社について</h2>
+                    <h2>弊社について</h2>
                     <p>
                         テキストテキストテキストテキストテキスト<br>
                         テキストテキストテキストテキストテキスト<br>
@@ -135,10 +159,10 @@
             </div>
         </div> -->
 
-        <div class="business-list-wrappper">
+        <div class="business-list-wrappper" id="business-list">
             <h2>弊社が行っている事業</h2>
             <div class="business-blocks">
-                
+
                 <div class="business-block1">
                     <h3>ソフトテニススクール</h3>
                     <img src="image/tennis-school.jpg">
@@ -150,11 +174,11 @@
                             テキストテキストテキストテキスト
                         </p>
                     </div>
-                    
-                        <a href="soft-tennis-school.html">事業の詳細を見る</a>
-                    
+
+                    <a href="soft-tennis-school.html">事業の詳細を見る</a>
+
                 </div>
-                
+
                 <div class="business-block2">
                     <h3>オーバーレイアプリ開発</h3>
                     <img src="image/overlay-app.jpg">
@@ -187,12 +211,14 @@
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#cc675c" fill-opacity="1" d="M0,288L30,266.7C60,245,120,203,180,176C240,149,300,139,360,160C420,181,480,235,540,218.7C600,203,660,117,720,112C780,107,840,181,900,192C960,203,1020,149,1080,160C1140,171,1200,245,1260,261.3C1320,277,1380,235,1410,213.3L1440,192L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
-              </svg>
+                <path fill="#cc675c" fill-opacity="1"
+                    d="M0,288L30,266.7C60,245,120,203,180,176C240,149,300,139,360,160C420,181,480,235,540,218.7C600,203,660,117,720,112C780,107,840,181,900,192C960,203,1020,149,1080,160C1140,171,1200,245,1260,261.3C1320,277,1380,235,1410,213.3L1440,192L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+                </path>
+            </svg>
         </div>
-        
 
-        <div class="sns-wrapper">
+
+        <div class="sns-wrapper" id="sns">
             <div class="sns-block">
                 <h2>SNS</h2>
                 <div class="sns-icons1">
