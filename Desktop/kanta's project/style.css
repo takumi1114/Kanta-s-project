@@ -565,6 +565,7 @@ margin-bottom:20px;
 
 /* 事業紹介ページ*/
 
+
 .business-intro-wrapper{
     height:1200px;
     text-align:center;
@@ -645,7 +646,7 @@ margin-bottom:20px;
 
 .company-overview-block{
     width:70%;
-    height:800px;
+    height:1000px;
     margin:0 auto;
     background-color:#f5f5f5;
     box-shadow: -10px 10px #cc675c;
@@ -654,10 +655,33 @@ margin-bottom:20px;
 
 .ceo-message-heading{
     padding:25px 0px;
+    width:70%;
+    margin:0 auto;
 }
+
+.ceo-message-heading h1::before{
+    content:"";
+    height:1px;
+    background-color:#fa8072;
+    flex-grow: 1;
+    margin-right:20px;
+
+}
+
+.ceo-message-heading h1::after{
+    content:"";
+    height:1px;
+    background-color:#fa8072;
+    flex-grow: 1;
+    margin-left:20px;
+}
+
 .ceo-message-heading h1{
     text-align: center;
     color:#fa8072;
+    font-weight:400;
+    display: flex;
+    align-items: center;
 }
 
 .ceo-message-section{
@@ -672,22 +696,65 @@ margin-bottom:20px;
 
 .ceo-photo img{
     width:100%;
+    border-radius: 10px;
 }
 
 .ceo-message{
     width:45%;
     border:1px solid #fa8072;
     padding:35px 20px;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    position:relative;
+    border-radius: 10px;
 }
+
 
 .ceo-message p{
     line-height: 2em;
 }
 
 .company-info-heading{
-    margin:50px 0px 20px 0px;
+    padding:50px 0px 20px 0px;
+    width:fit-content;
+    margin:0 auto;
 }
 .company-info-heading h2{
     text-align: center;
     color:#fa8072;
+    font-weight:400;
+}
+
+.company-info-data{
+    width:50%;
+    margin:0 auto;
+}
+
+
+.company-info-data table{
+    border:2px solid #fa8072 ;
+    width:100%;
+}
+
+.company-info-data td,
+.company-info-data th{
+    border:1px solid #fa8072; 
+    height:50px;
+    padding:0px 20px;
+}
+
+.company-info-data th{
+    font-weight:normal;
+    color:#ffffff;
+}
+
+.company-info-data td{
+    text-align:left;
+}
+
+.company-info-data th{
+    background-color:#fa8072;
+}
+
+.company-info-data li{
+    list-style: none;
 }
