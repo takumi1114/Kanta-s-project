@@ -436,15 +436,6 @@ input.last-name{
     z-index: -2;
 }
 
-.business-block1 h3,
-.business-block2 h3,
-.business-block3 h3{
-    color:#fa8072;
-    margin-bottom:25px;
-    font-size:25px;
-    font-weight:400;
-}
-
 .business-block1,
 .business-block2,
 .business-block3{
@@ -453,16 +444,60 @@ input.last-name{
     background-color: #f5f5f5;
     padding:15px 10px;
     text-align: center;
-    box-shadow: -10px 10px #994f46;
+    box-shadow: 10px 10px #994f46;
+    position: relative;
 }
 
+.business-block1 h3,
+.business-block2 h3,
+.business-block3 h3{
+    position: absolute;
+    top:20px;
+    left:-15px;
+    width:400px;
+    height:40px;
+    background-color:#fa8072;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    font-size:20px;
+    line-height:40px;
+    font-weight:200;
+    color:#ffffff;
+}
+
+.business-block1 h3::before,
+.business-block2 h3::before,
+.business-block3 h3::before{
+    content:"";
+    position: absolute;
+    width:15px;
+    height:30px;
+    left:0px;
+    top:40px;
+    background-color:#994f46;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index:2;
+}
+
+.business-block1 h3::after,
+.business-block2 h3::after,
+.business-block3 h3::after{
+    content:"";
+    position: absolute;
+    width:15px;
+    height:15px;
+    left:0px;
+    top:40px;
+    background-color:#fa8072;
+}
 
 .business-block1 img,
 .business-block2 img,
 .business-block3 img{
 width:80%;
 height:250px;
-margin-bottom:20px;
+margin:80px 0px 20px 0px;
 }
 
 .business-overview{
@@ -470,7 +505,7 @@ margin-bottom:20px;
     padding:10px;
     margin:0 auto;
     border: 2px solid #fa8072;
-    margin-bottom:50px;
+    margin-bottom:30px;
 }
 
 .business-overview p{
@@ -536,10 +571,133 @@ margin-bottom:20px;
 
 .sns-block{
     width:40%;
-    height:400px;
+    height:550px;
     margin:0 auto;
     box-shadow: -10px 10px #cc675c;
-    background-color:#f5f5f5 ;
+    background-color:#f5f5f5;
+    transition:all 0.5s;
+}
+
+.sns-icons1 i,
+.sns-icons2 i{
+    padding:13px;
+    border:2px #cc675c solid;
+    width:100px;
+    height:100px;
+    color:#fa8072;
+    border-radius:10%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow:0 25px 35px rgba(0,0,0,0.1);
+    transition:all 0.3s;
+}
+
+
+.twitter-icon,
+.insta-icon,
+.facebook-icon,
+.youtube-icon{
+    position:relative;
+}
+
+.twitter-icon::before{
+    content:attr(data-text);
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:5vw;
+    pointer-events:none;
+    font-weight:700;
+    transition:0.5s;
+    opacity:0;
+}
+
+.insta-icon::before{
+    content:attr(data-text);
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:5vw;
+    pointer-events:none;
+    font-weight:700;
+    transition:0.5s;
+    opacity:0;
+}
+
+.facebook-icon::before{
+    content:attr(data-text);
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:5vw;
+    pointer-events:none;
+    font-weight:700;
+    transition:0.5s;
+    opacity:0;
+}
+
+.youtube-icon::before{
+    content:attr(data-text);
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:5vw;
+    pointer-events:none;
+    font-weight:700;
+    transition:0.5s;
+    opacity:0;
+}
+
+.twitter-icon:hover::before{
+    opacity:0.1;
+    transform:translate(-10%,calc(-50% + 280px));
+}
+
+.insta-icon:hover::before{
+    opacity:0.1;
+    transform:translate(-70%,calc(-50% + 270px));
+}
+
+.facebook-icon:hover::before{
+    opacity:0.1;
+    transform:translate(-20%,calc(-50% + 100px));
+}
+
+.youtube-icon:hover::before{
+    opacity:0.1;
+    transform:translate(-75%,calc(-50% + 100px));
+}
+
+.twitter-icon i:hover{
+    background:#1DA2F1;
+    color:#ffffff;
+    border:none;
+    border-radius:10%;
+}
+
+.insta-icon i:hover{
+    background:linear-gradient(to bottom,#c71585 30%,#ff1493,#ff6347 80%,#ff4500);
+    color:#ffffff;
+    border:none;
+    border-radius:10%;
+}
+
+.facebook-icon i:hover{
+    background:#4063AD;
+    color:#ffffff;
+    border:none;
+    border-radius:10%;
+}
+
+.youtube-icon i:hover{
+    background:#ff0000;
+    color:#ffffff;
+    border:none;
+    border-radius:10%;
 }
 
 .sns-block h2{
@@ -553,10 +711,10 @@ margin-bottom:20px;
 .sns-icons2{
     display:flex;
     margin:0 auto;
-    width:80%;
+    width:55%;
     text-align: center;
-    justify-content: center;
-    padding-bottom:15px;
+    justify-content: space-between;
+    padding-bottom:50px;
 }
 
 .sns-block img{
