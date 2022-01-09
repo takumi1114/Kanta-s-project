@@ -608,9 +608,14 @@ margin:80px 0px 20px 0px;
     transform:translate(-50%,-50%);
     font-size:5vw;
     pointer-events:none;
-    font-weight:700;
+    font-weight:bold;
     transition:0.5s;
     opacity:0;
+    color:transparent;
+    background: #ffffff;
+    text-shadow: -1px -1px 1px #000000, 1px 1px #ffffff;
+    background-clip: text;
+	-webkit-background-clip: text;
 }
 
 .insta-icon::before{
@@ -621,9 +626,14 @@ margin:80px 0px 20px 0px;
     transform:translate(-50%,-50%);
     font-size:5vw;
     pointer-events:none;
-    font-weight:700;
+    font-weight:bold;
     transition:0.5s;
     opacity:0;
+    color:transparent;
+    background: #ffffff;
+    text-shadow: -1px -1px 1px #000000, 1px 1px #ffffff;
+    background-clip: text;
+	-webkit-background-clip: text;
 }
 
 .facebook-icon::before{
@@ -634,9 +644,14 @@ margin:80px 0px 20px 0px;
     transform:translate(-50%,-50%);
     font-size:5vw;
     pointer-events:none;
-    font-weight:700;
+    font-weight:bold;
     transition:0.5s;
     opacity:0;
+    color:transparent;
+    background: #ffffff;
+    text-shadow: -1px -1px 1px #000000, 1px 1px #ffffff;
+    background-clip: text;
+	-webkit-background-clip: text;
 }
 
 .youtube-icon::before{
@@ -647,28 +662,33 @@ margin:80px 0px 20px 0px;
     transform:translate(-50%,-50%);
     font-size:5vw;
     pointer-events:none;
-    font-weight:700;
+    font-weight:bold;
     transition:0.5s;
     opacity:0;
+    color:transparent;
+    background: #ffffff;
+    text-shadow: -1px -1px 1px #000000, 1px 1px #ffffff;
+    background-clip: text;
+	-webkit-background-clip: text;
 }
 
 .twitter-icon:hover::before{
-    opacity:0.1;
+    opacity:0.2;
     transform:translate(-10%,calc(-50% + 280px));
 }
 
 .insta-icon:hover::before{
-    opacity:0.1;
+    opacity:0.2;
     transform:translate(-70%,calc(-50% + 270px));
 }
 
 .facebook-icon:hover::before{
-    opacity:0.1;
+    opacity:0.2;
     transform:translate(-20%,calc(-50% + 100px));
 }
 
 .youtube-icon:hover::before{
-    opacity:0.1;
+    opacity:0.2;
     transform:translate(-75%,calc(-50% + 100px));
 }
 
