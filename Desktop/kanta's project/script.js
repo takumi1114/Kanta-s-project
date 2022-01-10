@@ -57,19 +57,21 @@ $(function () {
 
       let list = document.querySelectorAll('.social-icon');
       let bg = document.querySelector('.sns-block');
+      let hdc = document.querySelector('.sns-heading');
       list.forEach(elements =>{
           elements.addEventListener('mouseenter',function
           (event){
             let color = event.target.getAttribute('data-color');
             bg.style.backgroundColor = color;
+            hdc.style.color = '#ffffff';
           })
           elements.addEventListener('mouseleave',function
           (event){
             let color = event.target.getAttribute('data-color');
             bg.style.backgroundColor = '#ffffff';
+            hdc.style.color = '#fa8072';
           })
-      })
+      });
 
-      
 
 });

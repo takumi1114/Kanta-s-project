@@ -578,6 +578,10 @@ margin:80px 0px 20px 0px;
     transition:all 0.5s;
 }
 
+h2.sns-heading{
+    transition:all 0.3s;
+}
+
 .sns-icons1 i,
 .sns-icons2 i{
     padding:13px;
